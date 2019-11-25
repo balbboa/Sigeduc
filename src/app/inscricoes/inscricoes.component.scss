@@ -1,0 +1,53 @@
+a.card-footer {
+  color: white;
+
+  &:hover{
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+}
+
+.card{
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.indicators::before {
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+  content: " ";
+  position: absolute;
+  font-size: 8rem;
+  color: #fff;
+  top: -35%;
+  right: -14px;
+  opacity: 0.3;
+}
+
+.indicators.indicators-addpre{
+  background: linear-gradient(45deg,#50d489,#368859)!important;
+  &::before {
+    content: "\f234";
+  }
+}
+
+.indicators.indicators-addpos{
+  background: linear-gradient(45deg,#82b9ef,#3f84c6)!important;
+  &::before {
+    content: "\f234";
+  }
+}
+
+.indicators.indicators-ban{
+  background: linear-gradient(45deg,#fdabb4,#ed5565)!important;
+  &::before {
+    content: "\f05e";
+  }
+}
+.indicators.indicators-search{
+  background: linear-gradient(45deg,#ecce93,#dc8b18)!important;
+  &::before {
+    content: "\f002";
+  }
+}
+
