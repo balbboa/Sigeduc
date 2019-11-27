@@ -1,7 +1,32 @@
-<div class="py-5 bg-lighten-blue">
+<div class="bg-lighten-blue">
     <div class="container">
       <div class="d-flex flex-column align-items-center justify-content-center">
         <h2 class="title">Dados Pessoais</h2>
+
+        <div class="wrapper">
+          <nav class="stepper">
+            <ul class="stepper__list">
+              <li class="stepper__list__item stepper__list__item--current">
+                <i class="la la-dot-circle"></i><span class="stepper__list__title">Estudante</span>
+              </li>
+              <li class="stepper__list__item stepper__list__item--pending">
+                <i class="la la-dot-circle"></i><span class="stepper__list__title">Documentos</span>
+              </li>
+              <li class="stepper__list__item stepper__list__item--pending">
+                <i class="la la-dot-circle"></i><span class="stepper__list__title">NEE</span>
+              </li>
+              <li class="stepper__list__item stepper__list__item--pending">
+                <i class="la la-dot-circle"></i><span class="stepper__list__title">Contato</span>
+              </li>
+              <li class="stepper__list__item stepper__list__item--pending">
+                <i class="la la-dot-circle"></i><span class="stepper__list__title">Vaga</span>
+              </li>
+              <li class="stepper__list__item stepper__list__item--pending">
+                <i class="la la-dot-circle"></i><span class="stepper__list__title">Comprovante</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="card w-100 my-4">
           <div class="card-header">
@@ -145,7 +170,7 @@
 
           <div class="card-footer text-center">
             <a class="btn secondary p-2 mr-3" [routerLink]="'/cpf'">Voltar</a>
-            <a class="btn p-2" [routerLink]="'/estudante'">Avançar</a>
+            <a class="btn p-2" [routerLink]="'/docs'">Avançar</a>
           </div>
         </div>
       </div>

@@ -1,6 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 $primary-color: #284e95;
 
+app-root{
+  min-height: 100%;
+  display: block;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+
+// body {
+//   font-family: tahoma;
+//   padding: 40px 0;
+// }
+
+
 .title{
   margin: 20px 0;
 
@@ -51,9 +69,36 @@ p {
       box-shadow: 2px 2px 0 transparent;
     }
   }
+
+  &.success{
+    border: 2px solid #1f5724;
+    color: #1f5724;
+    box-shadow: 2px 2px 0 #1f5724;
+
+    &:hover {
+      box-shadow: none ;
+      top: 2px;
+      left: 2px;
+      box-shadow: 2px 2px 0 transparent;
+    }
+  }
+
+  &.print{
+    border: 2px solid #f2ac59;
+    color: #f2ac59;
+    box-shadow: 2px 2px 0 #f2ac59;
+
+    &:hover {
+      box-shadow: none ;
+      top: 2px;
+      left: 2px;
+      box-shadow: 2px 2px 0 transparent;
+    }
+  }
 }
 
 label.obrigatorio::after {
   content: " *";
   color: #dc3545;
 }
+
