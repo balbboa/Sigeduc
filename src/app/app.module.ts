@@ -17,6 +17,8 @@ import { OrientacoesComponent } from './cadastro/orientacoes/orientacoes.compone
 import { ValidarCPFComponent } from './cadastro/validar-cpf/validar-cpf.component';
 import { CadastroModule } from './cadastro/cadastro.module';
 import { ConsultaModule } from './consulta/consulta.module';
+import { CardsComponent } from './dashboard/cards/cards.component';
+import { DocumentacaoComponent } from './dashboard/documentacao/documentacao.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ConsultaModule } from './consulta/consulta.module';
     FooterComponent,
     OrientacoesComponent,
     DashboardComponent,
-    ValidarCPFComponent
+    ValidarCPFComponent,
+    CardsComponent,
+    DocumentacaoComponent
   ],
   imports: [
     BrowserModule,

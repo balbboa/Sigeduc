@@ -1,72 +1,70 @@
+section{
+  background-color: #f5f5f5;
+}
+
 a.card-footer {
   color: white;
 }
 
+h2{
+  font-size: 34px;
+  font-weight: 300;
+}
+
+p{
+  color: #6e6e6e;
+    font-size: 16px;
+}
+
 .card{
   overflow: hidden;
-  margin-bottom: 25px;
   @media (min-width: 992px) {
-    min-height: 230px;
+    min-height: 378px;
+  }
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 0 5px 30px -10px rgba(0, 0, 0, .35);
+  margin-top: -50px;
+  margin-bottom: 50px;
+
+  .card-body{
+    text-align: center;
+    color: black;
   }
 }
 
-.indicators::before {
-  font-family: 'Line Awesome Free';
-  font-weight: 900;
-  content: " ";
-  position: absolute;
-  font-size: 8rem;
-  color: #fff;
-  top: -18%;
-  right: -14px;
-  opacity: 0.3;
+.indicators-addpre{
+  background: linear-gradient(45deg,#8bc63e,#6baf29)!important;
 }
 
-.indicators.indicators-addpre{
-  background: linear-gradient(45deg,#50d489,#368859)!important;
-  &::before {
-    content: "\f234";
-  }
-
-
-  a:hover{
-    color: #1c653b;
-    text-decoration: none;
-  }
+a.indicators-addpre:hover{
+  color: #1c653b;
+  text-decoration: none;
 }
 
-.indicators.indicators-addpos{
-  background: linear-gradient(45deg,#82b9ef,#3f84c6)!important;
-  &::before {
-    content: "\f234";
-  }
-
-  a:hover{
-    color: #1d588e;
-    text-decoration: none;
-  }
+.indicators-addpos{
+  background: linear-gradient(45deg,#65c8d1,#4eb2bc)!important;
 }
 
-.indicators.indicators-ban{
-  background: linear-gradient(45deg,#fdabb4,#ed5565)!important;
-  &::before {
-    content: "\f05e";
-  }
-
-  a:hover{
-    color: #bf2f3f;
-    text-decoration: none;
-  }
-}
-.indicators.indicators-search{
-  background: linear-gradient(45deg,#ecce93,#dc8b18)!important;
-  &::before {
-    content: "\f002";
-  }
-
-  a:hover{
-    color: #a76813;
-    text-decoration: none;
-  }
+a.indicators-addpos:hover{
+  color: #1d588e;
+  text-decoration: none;
 }
 
+.indicators-ban{
+  background: linear-gradient(45deg,#ed5620,#ea3c14)!important;
+}
+
+a.indicators-ban:hover{
+  color: #bf2f3f;
+  text-decoration: none;
+}
+
+.indicators-search{
+  background: linear-gradient(45deg,#f2b03b,#f09225)!important;
+}
+
+a.indicators-search:hover{
+  color: #a76813;
+  text-decoration: none;
+}
