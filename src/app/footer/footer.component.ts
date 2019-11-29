@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  netImage3:any = '../assets/prefeitura-santana.png';
+  netImage4:any = '../assets/macapa.png';
+  netImage5:any = '../assets/brasao-do-amapa.png';
 
   constructor() { }
 

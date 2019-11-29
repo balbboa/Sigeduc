@@ -2,11 +2,16 @@
   z-index: 1;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 400px;
   background-color: #0097ff;
-  text-align: center;
   color: white;
+}
+
+h1{
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 54px;
 }
 
 .color-bar {

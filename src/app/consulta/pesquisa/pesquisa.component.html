@@ -1,1 +1,39 @@
-<p>pesquisa works!</p>
+<div class="bg-lighten-blue">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <h2 class="title">Inscrições Encontradas</h2>
+
+      <div class="card w-100 my-4">
+        <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">CPF</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Data Nascimento</th>
+              <th scope="col">Responsável(CPF)</th>
+              <th scope="col">Data de Cadastro</th>
+              <th scope="col">Situação</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>
+                <a class="btn mr-2 p-2" [routerLink]="'/comprovante'"><i class="la la-search"></i></a>
+                <a class="btn danger p-2" [routerLink]="'/consultarPre'"><i class="la la-ban"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

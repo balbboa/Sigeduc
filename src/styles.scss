@@ -11,6 +11,7 @@ html, body {
   height: 100%;
   min-height: 100%;
   font-family: 'Open Sans', sans-serif;
+  color: #2d2e2f;
 }
 
 
@@ -23,14 +24,6 @@ html, body {
 .title{
   margin: 20px 0;
 
-  &:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: auto;
-    background-color: #0f4e96;
-    margin-top: 10px;
-  }
 }
 
 p {
@@ -70,6 +63,21 @@ p {
       box-shadow: 2px 2px 0 transparent;
     }
   }
+
+  &.danger{
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    box-shadow: 2px 2px 0 #dc3545;
+
+    &:hover {
+      box-shadow: none ;
+      top: 2px;
+      left: 2px;
+      box-shadow: 2px 2px 0 transparent;
+    }
+  }
+
+
 
   &.success{
     border: 2px solid #1f5724;
