@@ -1,17 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top" (scroll)="onWindowScroll();">
   <div class="container">
-  <a class="navbar-brand btn" [routerLink]="'/home'">Portal da Matrícula</a>
+  <a class="navbar-brand" [routerLink]="'/home'">
+    <img class="" [src]="Logo"/>
+
+  </a>
   <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item d-flex flex-lg-row flex-column align-items-center dropdown" ngbDropdown>
-        <a class="nav-link text-uppercase" id="id01" [routerLink]="['/home','app-inscricoes']">Inscrições</a>
-        <a class="nav-link text-uppercase" id="id02" href="#calendario">Calendário</a>
-        <a class="nav-link text-uppercase" id="id03" href="#faq">Faq</a>
-        <a class="nav-link text-uppercase" id="id04" href="#contato">Fale conosco</a>
-        <a class="nav-link text-uppercase" id="id05" href="#">Sigeduc</a>
+        <a class="nav-link text-uppercase" id="id01" [routerLink]="['/home']">Inscrições</a>
+        <a class="nav-link text-uppercase" id="id02" [routerLink]="['/home']">Calendário</a>
+        <a class="nav-link text-uppercase" id="id03" [routerLink]="['/home']">Faq</a>
+        <a class="nav-link text-uppercase" id="id04" [routerLink]="['/home']">Fale conosco</a>
+        <a class="nav-link text-uppercase" id="id05" [routerLink]="['/home']">Sigeduc</a>
       </li>
     </ul>
   </div>

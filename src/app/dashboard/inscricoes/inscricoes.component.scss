@@ -1,29 +1,32 @@
 section{
   position: relative;
-  background-image: url('/assets/pixel.png');
+  @media (min-width: 992px) {
+    background-image: url('/assets/pixel.png');
+    box-shadow: inset 100px 0px 100px 50px #ffffff, inset -100px 0px 100px 50px #ffffff;
+  }
   background-size: contain;
 
-  &::after{
-    //position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    background-image: linear-gradient(to right, white 1%, transparent 25%);
-  }
+  // &::after{
+  //   //position: absolute;
+  //   top:0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   content: '';
+  //   display: block;
+  //   background-image: linear-gradient(to right, white 1%, transparent 25%);
+  // }
 
-  &::before {
-    //position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    background-image: linear-gradient(to left, white 1%, transparent 25%);
-  }
+  // &::before {
+  //   //position: absolute;
+  //   top:0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   content: '';
+  //   display: block;
+  //   background-image: linear-gradient(to left, white 1%, transparent 25%);
+  // }
 }
 
 a.card-footer {
@@ -31,7 +34,7 @@ a.card-footer {
 }
 
 h2{
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 300;
 }
 

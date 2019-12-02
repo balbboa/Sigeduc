@@ -19,6 +19,7 @@ import { CadastroModule } from './cadastro/cadastro.module';
 import { ConsultaModule } from './consulta/consulta.module';
 import { CardsComponent } from './dashboard/cards/cards.component';
 import { DocumentacaoComponent } from './dashboard/documentacao/documentacao.component';
+import { EnviarMensagemModule } from './enviarMensagem/enviar-mensagem.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DocumentacaoComponent } from './dashboard/documentacao/documentacao.com
     NgbModule,
     CadastroModule,
     AppRoutingModule,
-    ConsultaModule
+    ConsultaModule,
+    EnviarMensagemModule
   ],
   providers: [],
   bootstrap: [AppComponent]

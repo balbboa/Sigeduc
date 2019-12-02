@@ -1,11 +1,12 @@
 .intro{
-  z-index: 1;
   align-items: center;
   display: flex;
   justify-content: flex-start;
   min-height: 400px;
-  background-color: #0097ff;
+  background: linear-gradient(to right, #4e98ff 40%, #009c38a6), url(/assets/sigeduc.png);
+  background-position: right;
   color: white;
+  min-height: 500px;
 }
 
 h1{
@@ -22,7 +23,6 @@ h1{
 	background: -o-linear-gradient(left,  #4eb2bc 0%,#4eb2bc 20%,#4eb2bc 20%,#ea3c14 20%,#ea3c14 20%,#ea3c14 40%,#8bc63e 40%,#8bc63e 60%,#8bc63e 60%,#f09225 60%,#f09225 80%,#3871bd 80%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  #4eb2bc 0%,#4eb2bc 20%,#4eb2bc 20%,#ea3c14 20%,#ea3c14 20%,#ea3c14 40%,#8bc63e 40%,#8bc63e 60%,#8bc63e 60%,#f09225 60%,#f09225 80%,#3871bd 80%); /* IE10+ */
 	background: linear-gradient(to right,  #4eb2bc 0%,#4eb2bc 20%,#4eb2bc 20%,#ea3c14 20%,#ea3c14 20%,#ea3c14 40%,#8bc63e 40%,#8bc63e 60%,#8bc63e 60%,#f09225 60%,#f09225 80%,#3871bd 80%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eb2bc', endColorstr='#3871bd',GradientType=1 ); /* IE6-9 */
   height: 15px;
   width: 100%;
 }

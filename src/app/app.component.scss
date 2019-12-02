@@ -1,3 +1,5 @@
 .padding{
-  padding: 5rem 0 14rem;
+  padding: 0 0 14rem;
+
+  @media (max-width: 991.98px) { padding: 5rem 0 33rem; }
 }

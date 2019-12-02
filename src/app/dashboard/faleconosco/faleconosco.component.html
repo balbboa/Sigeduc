@@ -2,12 +2,13 @@
     <div class="d-flex flex-column align-items-center justify-content-center">
       <h2 class="title"><b>Fale</b> Conosco</h2>
 
-      <div class="w-100 d-flex flex-row align-items-start justify-content-between">
-        <div>
+      <div class="w-100 d-flex flex-column-reverse flex-lg-row align-items-start justify-content-between">
+        <div class="text-justify">
           <h3>Tire suas dúvidas</h3>
           <p>Antes de entrar em contato conosco, certifique-se de sua dúvida já não está respondida na lista de questões frequentes.</p>
         </div>
-        <a class="btn p-2" href="#">Enviar uma mensagem</a>
+
+        <a class="btn p-2 mb-4 mb-lg-0" [routerLink]="'/enviarMsg'">Enviar uma mensagem</a>
       </div>
 
         <ngb-accordion class="w-100" #acc="ngbAccordion" activeIds="ngb-panel-0">
