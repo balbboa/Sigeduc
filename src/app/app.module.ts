@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { DataService } from './data.service';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule, Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -20,6 +22,7 @@ import { ConsultaModule } from './consulta/consulta.module';
 import { CardsComponent } from './dashboard/cards/cards.component';
 import { DocumentacaoComponent } from './dashboard/documentacao/documentacao.component';
 import { EnviarMensagemModule } from './enviarMensagem/enviar-mensagem.module';
+import { PolicyListComponent } from './policy-list/policy-list.component';
 
 @NgModule({
   declarations: [
@@ -34,15 +37,18 @@ import { EnviarMensagemModule } from './enviarMensagem/enviar-mensagem.module';
     DashboardComponent,
     ValidarCPFComponent,
     CardsComponent,
-    DocumentacaoComponent
+    DocumentacaoComponent,
+    PolicyListComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     NgbModule,
     CadastroModule,
     AppRoutingModule,
     ConsultaModule,
-    EnviarMensagemModule
+    EnviarMensagemModule,
+    InMemoryWebApiModule.forRoot(DataService)
   ],
   providers: [],
   bootstrap: [AppComponent]

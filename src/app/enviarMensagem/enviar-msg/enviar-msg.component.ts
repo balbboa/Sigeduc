@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnviarMsgComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    let divToChange = document.getElementById('navbar');
+    
+    divToChange.className = "navbar navbar-expand-lg customNav";
+  }
 
   ngOnInit() {
   }

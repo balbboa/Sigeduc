@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comprovante.component.scss']
 })
 export class ComprovanteComponent implements OnInit {
-  netImage:any = '../assets/logo_sigeduc_small2.png';
+  netImage:any = '../assets/logo.png';
   constructor() { }
 
   ngOnInit() {

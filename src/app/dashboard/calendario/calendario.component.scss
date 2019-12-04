@@ -66,7 +66,8 @@
 
 .main-timeline .timeline-year {
   color: #65c7d0;
-  font-size: 22px;
+  font-size: 36px;
+  @media (min-width: 768px) and (max-width: 991.98px) { font-size: 22px; }
   font-weight: 600;
   display: inline-block;
   transform: translatey(-50%);
